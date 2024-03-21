@@ -14,6 +14,14 @@
 */
 
 // Your code goes here
+// Named function syntax
+function logMessage() {
+  // Logging a message in the console
+  console.log('Hello, World!');
+}
+
+// Calling the logMessage function
+logMessage();
 
 
 
@@ -31,8 +39,12 @@
 
 // Your code goes here...
 
+function logMyMessage(message) {
+  console.log(message);
+}
 
-
+// Example usage:
+logMyMessage('I log my first message!');
 
 /**
  * ===============================================================
@@ -46,6 +58,12 @@
 
 // Your code goes here...
 
+function logMessageWithMyName(name) {
+  console.log('My name is ' + name + '!');
+}
+
+// Example usage:
+logMessageWithMyName('Josh');
 
 
 
@@ -61,8 +79,11 @@
 */
 
 // Your code goes here...
-
-
+function logMyInfo(name, age){
+  
+  console.log('My name is '+name+'. I am '+age+' years old!');
+}
+logMyInfo('Josh', 30);
 
 
 // === TEST YOURSELF ===

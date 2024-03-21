@@ -15,7 +15,19 @@
  */
 
 // Your code goes here...
+function doesArrayIncludeItemsBetweenVals(arr, val1, val2) {
+  for (let i = 0; i < arr.length; i++) {
+    const currentItem = arr[i];
+    if (currentItem > val1 && currentItem < val2) {
+      return true; // Early return if item is found between val1 and val2
+    }
+  }
+  return false; // Default return if no such item is found
+}
 
+// Example usage:
+console.log(doesArrayIncludeItemsBetweenVals([2, 4, 2], 3, 5)); // Output: true
+console.log(doesArrayIncludeItemsBetweenVals([2, 4, 2], 5, 10)); // Output: false
 
 
 
@@ -35,9 +47,38 @@
  */
 
 // Your code goes here...
+function getValueWithConditionOne(num1, num2){
+if (num1 ===40 & num2 ===40){
+  return num1 + num2;
+}
+else{
+  return (num1+num2)*2
+}
+}
 
+const getValueWithConditionTwo = (num1, num2) => {
+  if (num1 ===40 & num2 ===40){
+    return num1 + num2;
+  }
+  else{
+    return (num1+num2)*2
+  }
+}
 
-
+const getValueWithConditionThree = function (num1, num2) {
+  if (num1 ===40 & num2 ===40){
+    return num1 + num2;
+  }
+  else{
+    return (num1+num2)*2
+  }
+}
+console.log(getValueWithConditionOne(40, 40)); 
+console.log(getValueWithConditionTwo(40, 40)); 
+console.log(getValueWithConditionThree(40, 40)); 
+console.log(getValueWithConditionTwo(50, 40)); 
+console.log(getValueWithConditionThree(50, 40)); 
+console.log(getValueWithConditionOne(50, 40)); 
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-3"
